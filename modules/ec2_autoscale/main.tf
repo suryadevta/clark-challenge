@@ -9,7 +9,7 @@ data "aws_ami" "ami" {
 
 
 resource "aws_launch_template" "launch_template" {
-  name                   = "ush-${var.env}-lt-ec2-${var.ec2_name}"
+  name                   = "clark-${var.env}-lt-ec2-${var.ec2_name}"
   description            = "Launch Template for ${var.ec2_name}"
   update_default_version = "true"
   block_device_mappings {
